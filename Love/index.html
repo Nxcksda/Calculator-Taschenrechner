@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eine Frage für dich 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Schwebende Herzen im Hintergrund (werden von script.js erzeugt) -->
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <main class="screen" id="question">
+    <div class="emoji" aria-hidden="true">💌</div>
+    <h1 id="title">Willst du mit mir zusammen sein?</h1>
+    <p class="hint" id="hint" aria-live="polite"></p>
+
+    <div class="buttons">
+      <button type="button" class="btn btn-yes" id="yes">Ja</button>
+      <span class="no-slot" id="noSlot">
+        <button type="button" class="btn btn-no" id="no">Nein</button>
+      </span>
+    </div>
+  </main>
+
+  <main class="screen" id="answer" hidden>
+    <div class="emoji" aria-hidden="true">🥰</div>
+    <h1 id="answerTitle">Jaaaa!</h1>
+    <p class="answer-text" id="answerText"></p>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="mail.js"></script>
+</body>
+</html>
